@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-container {
+    max-width: 550px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background: #fafafa;
+    transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #ff385c;
+    background: white;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 56, 92, 0.15);
+}
+
+textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+input[type="file"] {
+    padding: 6px;
+    background: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #ff385c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #e03150;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #f9fafb, #eef2f7);
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff385c;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}

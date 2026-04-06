@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Police Station Manager</title>
+<link rel="stylesheet" href="/index.css">
+<link rel="icon" href="https://www.shutterstock.com/shutterstock/photos/1396002164/display_1500/stock-vector-a-mumbai-police-logo-symbol-1396002164.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo"> <img src="https://www.shutterstock.com/shutterstock/photos/1396002164/display_1500/stock-vector-a-mumbai-police-logo-symbol-1396002164.jpg" alt="logo" width="30" height="24"> Police Station Management System (PSMS)</div>
+    <div class="nav-links">
+        <a href="/home">Home</a>
+        <a href="/register/criminal">Add Criminals</a>
+        <!-- <a href="#">Crimes</a> -->
+        <a href="/officers/register">Add Officer</a>
+        <a href="/complaints/register">Register Complaint</a>
+        <a  href="/missing/add">Add Missing Complaint</a>
+    </div>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>Police Station Management System</h1>
+    <p>Manage criminals, officers and complaints efficiently</p>
+</div>
+
+<!-- Cards -->
+<div class="container">
+
+    <a href="/show/criminals" class="card">
+        <h3>👤 Criminals</h3>
+        <p>View and manage criminal records</p>
+    </a>
+
+    <a href="/officers/show" class="card">
+        <h3>👮 Officers</h3>
+        <p>Manage police officers</p>
+    </a>
+
+    <a href="/complaints/show" class="card">
+        <h3>📄 Complaints</h3>
+        <p>Register and track complaints</p>
+    </a>
+     <a href="/missing/show" class="card">
+        <h3>📄 Missing Peoples</h3>
+        <p>Search missing Persons</p>
+    </a>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

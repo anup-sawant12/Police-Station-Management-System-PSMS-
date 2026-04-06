@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff385c;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ff385c;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    padding: 40px 20px;
+}
+
+.form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    outline: none;
+    background: #fafafa;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+    border-color: #ff385c;
+    background: #fff;
+    box-shadow: 0 0 0 1.5px #ff385c;
+}
+
+.rank,
+.department {
+    margin-top: 10px;
+}
+
+.rank label,
+.department label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff385c, #e03150);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 56, 92, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        padding: 25px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+
+.joining-date {
+    margin-top: 10px;
+}
+
+.joining-date label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}

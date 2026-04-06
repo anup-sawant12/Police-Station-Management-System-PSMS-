@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Police Station Manager</title>
+<link rel="stylesheet" href="/registerOfficer.css">
+<link rel="icon" href="https://www.shutterstock.com/shutterstock/photos/1396002164/display_1500/stock-vector-a-mumbai-police-logo-symbol-1396002164.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo"> <img src="https://www.shutterstock.com/shutterstock/photos/1396002164/display_1500/stock-vector-a-mumbai-police-logo-symbol-1396002164.jpg" alt="logo" width="30" height="24"> Police Station Management System (PSMS)</div>
+    <div class="nav-links">
+        <a href="/home">Home</a>
+        <a href="/register/criminal">Add Criminals</a>
+        <!-- <a href="#">Crimes</a> -->
+        <a href="/officers/register">Add Officer</a>
+        <a href="/complaints/register">Register Complaint</a>
+    </div>
+</div>
+
+<div class="container">
+    <form class="form" method="POST" action="/registerOfficer">
+        <h2>Add Police Officer</h2>
+
+        <div class="grid">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name">
+        </div>
+
+        <div class="rank">
+            <label>Rank</label>
+        <select name="rank">
+            <option value="Senior Police Inspector (PI)">Senior Police Inspector (PI)</option>
+            <option value="Assistant Police Inspector (API)">Assistant Police Inspector (API)</option>
+            <option value="Police Sub-Inspector (PSI)">Police Sub-Inspector (PSI)</option>
+            <option value="Assistant Sub-Inspector (ASI)">Assistant Sub-Inspector (ASI)</option>
+            <option value="Head Constable (HC)">Head Constable (HC)</option>
+            <option value="Police Naik (PN)">Police Naik (PN)</option>
+            <option value="Police Constable (PC)">Police Constable (PC)</option>
+        </select>
+           
+        </div>
+
+        <div class="grid">
+             <input type="text" name="badge_number" placeholder="Badge Number" required>
+            
+            
+        </div>
+
+
+        <div class="department">
+            <label>Department</label>
+        <select name="department">
+            <option value="Station House / Administration">Station House / Administration</option>
+            <option value="Crime / Investigation Department">Crime / Investigation Department (API)</option>
+            <option value="Law & Order Department">Law & Order Department (PSI)</option>
+            <option value="Control Room / Duty Officer Desk">Control Room / Duty Officer Desk (ASI)</option>
+            <option value="Traffic">Traffic</option>
+           
+        </select>
+           
+        </div>
+
+        <input type="number" name="contact_number" placeholder="Contact Number">
+
+        <input type="email" name="email" placeholder="Email">
+
+        <div class="joining-date">
+    <label>Joining Date</label>
+    <input type="date" name="joining_date">
+</div>
+
+        <button type="submit">Add Officer</button>
+    </form>
+</div>
+
+</body>
+</html>

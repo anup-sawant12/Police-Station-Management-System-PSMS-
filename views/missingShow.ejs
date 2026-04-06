@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Police Station Manager</title>
+<link rel="stylesheet" href="/missingShow.css">
+<link rel="icon" href="https://www.shutterstock.com/shutterstock/photos/1396002164/display_1500/stock-vector-a-mumbai-police-logo-symbol-1396002164.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo"> <img src="https://www.shutterstock.com/shutterstock/photos/1396002164/display_1500/stock-vector-a-mumbai-police-logo-symbol-1396002164.jpg" alt="logo" width="30" height="24"> Police Station Management System (PSMS)</div>
+    <div class="nav-links">
+        <a href="/home">Home</a>
+        <a href="/register/criminal">Add Criminals</a>
+        <!-- <a href="#">Crimes</a> -->
+        <a href="/officers/register">Add Officer</a>
+        <a href="/complaints/register">Register Complaint</a>
+        <a  href="/missing/add">Add Missing Complaint</a>
+    </div>
+</div>
+<table>
+    <td class="heading-bar">
+        <th class="heading-bar" >Name</th>
+        <th class="heading-bar"> Age</th>
+        <th class="heading-bar">Gender</th>
+        <th class="heading-bar">Missing Date</th>
+        <th class="heading-bar">Loaction</th>
+        <th class="heading-bar">Description</th>
+        <th class="heading-bar">Contact person</th>
+        <th class="heading-bar">Contact Number</th>
+        <th class="heading-bar">Status</th>
+
+    </td>
+<% data.forEach(person => { %>
+<tr>
+    
+    <td>
+        <% if(person.image){ %>
+            <img src="data:image/jpeg;base64,<%= person.image.toString('base64') %>" width="60">
+        <% } else { %>
+            No Image
+        <% } %>
+    </td>
+    <td><%= person.name %></td>
+    <td><%= person.age %></td>
+    <td><%= person.gender %></td>
+    <td><%= new Date(person.last_seen_date).toLocaleDateString('en-IN', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric'
+  }) %></td>
+    <td><%= person.last_seen_location %></td>
+    <td><%= person.description %></td>
+    <td><%= person.contact_person %></td>
+    <td><%= person.contact_number %></td>
+    <td><%= person.status %></td>
+</tr>
+<% }) %>
+</table>
+<script src="app.js"></script>
+</body>
+</html>

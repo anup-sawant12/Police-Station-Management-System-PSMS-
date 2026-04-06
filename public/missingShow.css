@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+}
+
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+thead {
+    background-color: #ff385c;
+    color: white;
+}
+
+th, td {
+    padding: 16px 18px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+td:first-child {
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+}
+
+td img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 12px;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.05);
+}
+
+td:first-child h3 {
+    margin: 10px 0 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+td:first-child p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+td:not(:first-child) {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.heading-bar{
+    background-color: #ff385c;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff385c;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ff385c;
+}
+
+@media (max-width: 900px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    td img {
+        width: 160px;
+        height: 160px;
+    }
+}
