@@ -185,7 +185,7 @@ app.post("/missing/add", upload.single("image"), async (req, res) => {
             ]
         );
 
-        res.send("/missing/show");
+        res.redirect("/missing/show");
 
     } catch (err) {
         console.error(err);
